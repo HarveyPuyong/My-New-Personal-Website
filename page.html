@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harvey Personal Portfolio</title>
+    <!-- embed font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sections-style/page-one.css">
+    <link rel="stylesheet" href="styles/sections-style/page-two.css">
+    <link rel="stylesheet" href="styles/sections-style/page-three.css">
+    <link rel="stylesheet" href="styles/sections-style/page-four.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.95/build/spline-viewer.js"></script>
   </head>
   <body>
+    <spline-viewer class="background-maneqquin" url="https://prod.spline.design/c49jzBEPIEnuRPdh/scene.splinecode"></spline-viewer>
     <div class="main-wrapper">
       <!-- header -->
       <header>
-        <div class="header__logo">
-          <img  class="header__logo-icon" src="icons/cat_logo.png" alt="logo icon">
+        <div class="header__logo content-element">
+          <img class="header__logo-icon" src="icons/cat_logo.png" alt="logo icon">
           <p class="header__logo-label">Programmer</p>
         </div>
-
-        <div class="socmed-list">
+        <div class="header__socmed-list content-element">
           <a class="socmed-list__link" href="">
-            <img class="socmed-list__link-icon" src="" alt="socmed-icon">
+            <img class="socmed-list__link-icon" src="icons/facebook-icon.png" alt="socmed-icon">
           </a>
           <a class="socmed-list__link" href="">
-            <img class="socmed-list__link-icon" src="" alt="socmed-icon">
+            <img class="socmed-list__link-icon" src="icons/tiktok-icon.png" alt="socmed-icon">
           </a>
           <a class="socmed-list__link" href="">
-            <img class="socmed-list__link-icon" src="" alt="socmed-icon">
+            <img class="socmed-list__link-icon" src="icons/instagram-icon.png" alt="socmed-icon">
           </a>
         </div>
 
-        <a href="contact-section" class="contact-btn">Contact Me</a>
+        <a href="contact-section" class="header__contact-btn content-element">Contact Me</a>
       </header>
       <div class="sections-wrapper">
         <!-- page-1 section -->
@@ -49,7 +59,7 @@
             </ul>
         </section>
         <!-- page-3 section -->
-        <section class="page-three-section">
+        <section id="page-three-section">
           <div class="tools-list d-grid">
             <div class="tools-list__tool">
               <img src="icons/capcut-icon.png" alt="tool-icon" class="tools-list__tool-img">
@@ -107,7 +117,7 @@
           </div>
         </section>
         <!-- page-4 section -->
-         <section class="page-four-section">
+         <section id="page-four-section">
           <form class="contact-form">
             <input id="input-name" type="text">
             <input id="input-email" type="email">
@@ -119,13 +129,13 @@
       </div>
       <!-- arrows -->
       <div class="arrows-container">
-        <div class="arrow prev">
-          <img class="arrow-icon" src="icons/arrow.png" alt="arrow-icon">
-          <p class="arrow-label">Prev</p>
+        <div class="arrows-container__arrow prev content-element">
+          <img class="arrows-container__arrow-icon" src="icons/arrow.png" alt="arrow-icon">
+          <p class="arrows-container__arrow-label">Prev</p>
         </div>
-        <div class="arrow next">
-          <p class="arrow-label">Next</p>
-          <img class="arrow-icon" src="icons/arrow.png" alt="arrow-icon">
+        <div class="arrows-container__arrow next content-element">
+          <p class="arrows-container__arrow-label">Next</p>
+          <img class="arrows-container__arrow-icon" src="icons/arrow.png" alt="arrow-icon">
         </div>
       </div>
     </div>

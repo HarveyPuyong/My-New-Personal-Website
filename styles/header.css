@@ -1,0 +1,60 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo{
+  display: flex;
+  align-items: center;
+  gap: 8%;
+  backdrop-filter: blur(10px);
+  padding: 3px 10px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.header__logo-icon{
+  width: clamp(24px, 2.3vw, 30px);
+  height: clamp(19px, 1.8vw, 23px);
+}
+
+.header__logo-label{
+  color: var(--main-color);
+  font-size: var(--header-fsize);
+  font-weight: 700;
+}
+
+.header__socmed-list{
+  display: flex;
+  width: clamp(5rem, 20vw, 7.5rem);
+  gap: 12%;
+  padding-top: 5px;
+  backdrop-filter: blur(15px);
+  border-radius: 8px;
+  padding: 3px 10px;
+  padding: 3px 10px;
+
+}
+
+.socmed-list__link{
+  cursor: pointer;
+}
+
+.socmed-list__link-icon{
+  --size: clamp(19px, 3.7vw, 25px );
+  height: var(--size);
+  width: var(--size);
+}
+
+.header__contact-btn{
+  font-size: var(--header-fsize);
+  text-align: center;
+  color: #000000;
+  background-color: #5AB8C9;
+  font-weight: 700;
+  width: clamp(90px, 21vw, 130px);
+  border-radius: 8px;
+  padding: 4px 0;
+  cursor: pointer;
+}
