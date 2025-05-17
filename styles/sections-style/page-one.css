@@ -2,6 +2,16 @@
   color: var(--font-color);
   text-align: center;
   font-size: var(--name-fsize);
-  margin-top: 8.1rem;
+  margin-top: 9rem;
   z-index: -10;
+}
+
+@media(width >= 800px){
+  .name{
+    color: var(--font-color);
+    text-align: center;
+    font-size: var(--name-fsize);
+    margin-top: 8rem;
+    z-index: -10;
+  }
 }
