@@ -1,15 +1,14 @@
 header{
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
 .header__logo{
   display: flex;
   align-items: center;
-  gap: 8%;
+  gap: 10px;
   backdrop-filter: blur(10px);
-  padding: 3px 10px;
   border-radius: 5px;
   width: fit-content;
 }
@@ -26,15 +25,14 @@ header{
 }
 
 .header__socmed-list{
+  position: absolute;
+  top: 35px;
   display: flex;
-  width: clamp(5rem, 20vw, 7.5rem);
-  gap: 12%;
-  padding-top: 5px;
+  flex-direction: column;
+  width: fit-content;
+  row-gap: 5px;
   backdrop-filter: blur(15px);
   border-radius: 8px;
-  padding: 3px 10px;
-  padding: 3px 10px;
-
 }
 
 .socmed-list__link{
@@ -54,7 +52,17 @@ header{
   background-color: #5AB8C9;
   font-weight: 700;
   width: clamp(90px, 21vw, 130px);
+  height: fit-content;
   border-radius: 8px;
   padding: 4px 0;
   cursor: pointer;
+}
+
+@media(width >= 500px){
+  .header__socmed-list{
+    position: relative;
+    top: 0;
+    flex-direction: row;
+    column-gap: 12px;
+  }
 }

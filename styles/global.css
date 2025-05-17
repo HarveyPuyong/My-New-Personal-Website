@@ -3,8 +3,8 @@
   --font-color: #716B6B;
   --accent-color: #5AB8C9;
 
-  --header-fsize: clamp(12px, 1.8vw, 15px);
-  --arrows-fsize: clamp(12px, 1.8vw, 15px);
+  --header-fsize: clamp(13px, 1.9vw, 15px);
+  --arrows-fsize: clamp(13px, 1.9vw, 15px);
   --name-fsize: clamp(40px, 11vw, 80px);
   --about-and-skills-fsize: clamp(16px, 8vw, 25px);
   --project-heading-fsize: 25px;
@@ -41,7 +41,7 @@ body{
 
 .main-wrapper{
   --wrapper-max-width: 1300px;
-  --wrapper-padding: 7%;
+  --wrapper-padding: 9%;
 
   position: relative;
   width: min(var(--wrapper-max-width), 100% - var(--wrapper-padding));
@@ -67,7 +67,7 @@ body{
   bottom: 35px;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 5px;
 }
 
 .arrows-container__arrow{
@@ -97,4 +97,5 @@ body{
 .content-element{
   z-index: 3;
 }
+
 
