@@ -26,11 +26,11 @@ header{
 
 .header__socmed-list{
   position: absolute;
-  top: 35px;
+  top: 33px;
   display: flex;
   flex-direction: column;
   width: fit-content;
-  row-gap: 5px;
+  row-gap: 4px;
   backdrop-filter: blur(15px);
   border-radius: 8px;
 }
