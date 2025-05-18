@@ -1,12 +1,12 @@
 :root{
   --main-color: white;
-  --font-color: #716B6B;
+  --font-color: rgb(165, 162, 162);
   --accent-color: #5AB8C9;
 
   --header-fsize: clamp(13px, 1.9vw, 15px);
   --arrows-fsize: clamp(13px, 1.9vw, 15px);
   --name-fsize: clamp(40px, 11vw, 80px);
-  --about-and-skills-fsize: clamp(16px, 8vw, 25px);
+  --about-and-skills-fsize: clamp(15px, 4vw, 1rem);
   --project-heading-fsize: 25px;
   --project-title-fsize: clamp(16px, 89vw, 25px);
   --project-description-fsize: clamp(14px, 6vw, 16px);
@@ -45,7 +45,8 @@ body{
 
   position: relative;
   width: min(var(--wrapper-max-width), 100% - var(--wrapper-padding));
-  height: 100%;
+  height: fit-content;
+  min-height: 100%;
   margin-inline: auto;
   padding-top: 1rem;
 }
@@ -58,7 +59,7 @@ body{
   width: 100%;
   top: 0;
   will-change: transform;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .arrows-container{
