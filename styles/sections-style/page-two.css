@@ -1,7 +1,7 @@
 #page-two-section{
   display: flex;
   flex-direction: column;
-  row-gap: 2rem;
+  row-gap: 1rem;
   margin-top: 150px;
   padding-bottom: 100px;
 }
@@ -9,7 +9,7 @@
 .about-me,
 .skills-list{
   font-size: var(--about-and-skills-fsize);
-  background: #10101086;
+  background: #1010103b;
   border-radius: 5px;
   backdrop-filter: blur(5px);
   padding: 18px;
@@ -53,7 +53,8 @@
   .about-me,
   .skills-list{
     height: 100%;
-    width: 30%;
+    width: fit-content;
+    max-width: 30%;
     background: #10101000;
     line-height: 1.5em;
   }
