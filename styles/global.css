@@ -51,16 +51,26 @@ body{
   padding-top: 1rem;
 }
 
-.background-maneqquin{
+.maneqquin-background{
   position: fixed;
   pointer-events: auto;
   background: transparent;
-  height: 108%;
+  height: 110%;
   width: 100%;
   top: 0;
   will-change: transform;
   /* z-index: 2; */
 }
+
+/* .spline-logo-cover{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 38px;
+  width: 150px;
+  background-color: rgb(0, 0, 0);
+  z-index: 4;
+} */
 
 .arrows-container{
   position: absolute;
@@ -69,6 +79,7 @@ body{
   display: flex;
   justify-content: space-between;
   padding: 0 5px;
+  z-index: 5;
 }
 
 .arrows-container__arrow{
