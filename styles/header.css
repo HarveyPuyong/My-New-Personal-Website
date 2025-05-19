@@ -14,8 +14,8 @@ header{
 }
 
 .header__logo-icon{
-  width: clamp(24px, 2.3vw, 30px);
-  height: clamp(19px, 1.8vw, 23px);
+  width: clamp(24px, 2.3vw, 27px);
+  height: clamp(19px, 1.8vw, 20px);
 }
 
 .header__logo-label{

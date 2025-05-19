@@ -56,7 +56,7 @@ body{
   pointer-events: auto;
   background: transparent;
   height: 110%;
-  width: 100%;
+  width: 101%;
   top: 0;
   will-change: transform;
   /* z-index: 2; */
