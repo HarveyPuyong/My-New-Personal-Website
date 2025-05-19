@@ -10,6 +10,7 @@
 .skills-list{
   font-size: var(--about-and-skills-fsize);
   background: #1010103b;
+  border: 1px solid rgba(255, 255, 255, 0.088);
   border-radius: 5px;
   backdrop-filter: blur(5px);
   padding: 18px;
@@ -37,7 +38,7 @@
   #page-two-section{
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 180px;
+    margin-top: 170px;
   }
 
   .about-me,
@@ -45,6 +46,7 @@
     height: 100%;
     width: fit-content;
     max-width: 33%;
+    border: none;
     line-height: 1.5em;
     background: none;
     backdrop-filter: blur(0px);
@@ -59,7 +61,7 @@
 
 @media(width >= 1050px){
   #page-two-section{
-    margin-top: 200px;
+    margin-top: 190px;
   }
 
   .about-me,

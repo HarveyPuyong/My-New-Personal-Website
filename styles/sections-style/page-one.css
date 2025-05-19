@@ -3,7 +3,7 @@
 }
 
 .name{
-  color: var(--font-color);
+  color: rgb(59, 57, 57);
   text-align: center;
   font-size: var(--name-fsize);
   margin-top: 7.6rem;
