@@ -1,3 +1,135 @@
 #page-three-section{
-  display: none;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 120px;
+}
+
+.projects-container,
+.tools-container{
+  max-width: 500px;
+}
+
+.projects-container__heading,
+.tools-container__heading{
+  color: var(--accent-color);
+  font-size: var(--tools-and-project-heading-fsize);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tools-list.d-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.tools-list__tool{
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.123);
+  border-radius: 8px;
+  padding: 10% 15%;
+}
+
+.tools-list__tool-img{
+  height: 100%;
+}
+
+.projects-list{
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.projects-list__project-card{
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.088);
+  border-radius: 8px;
+  height: fit-content;
+  padding: 13px 15px;
+  padding-bottom: 15px;
+}
+
+.projects-list__project-card-title{
+  color: var(--font-color);
+  font-size: var(--project-title-fsize);
+  margin-bottom: 6px;
+}
+
+.projects-list__project-card-description{
+  color: var(--font-color);
+  font-size: var(--project-description-fsize);
+  margin-bottom: 18px;
+  opacity: 0.7;
+}
+
+.projects-list__project-card-view-btn{
+  font-size: var(--project-btn-fsize);
+  font-weight: 600;
+  color: black;
+  background-color: var(--font-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+@media(width >= 350px){
+  .tools-list.d-grid{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+}
+
+@media(width >= 950px){
+  #page-three-section{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 110px;
+  }
+
+  .projects-container,
+  .tools-container{
+    max-width: 35%;
+    height: 100%;
+  }
+
+  .projects-container__heading,
+  .tools-container__heading{
+    font-size: calc(var(--tools-and-project-heading-fsize) - 5px);
+  }
+
+  .tools-list.d-grid{
+    gap: 17px;
+  }
+
+  .tools-list__tool{
+    background: none;
+    backdrop-filter: blur(0px);
+    border: none;
+    width: 56px;
+    height: 55px;
+    max-width: 60px;
+    padding: 0px;
+  }
+
+  .projects-container{
+    text-align: right;
+  }
+
+  .projects-list{
+    gap: 13px;
+  }
+
+  .projects-list__project-card{
+    padding-left: 15px;
+  }
+
+  .projects-list__project-card-title{
+    font-size: calc(var(--project-title-fsize) - 2px);
+  }
+
+  .projects-list__project-card-description{
+    margin-bottom: 15px;
+  }
+
 }

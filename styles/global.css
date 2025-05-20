@@ -7,10 +7,10 @@
   --arrows-fsize: 13px;
   --name-fsize: clamp(40px, 11vw, 80px);
   --about-and-skills-fsize: clamp(15px, 4vw, 1rem);
-  --project-heading-fsize: 25px;
-  --project-title-fsize: clamp(16px, 89vw, 25px);
-  --project-description-fsize: clamp(14px, 6vw, 16px);
-  --project-btn-fsize: clamp(12px, 6vw, 14px);
+  --tools-and-project-heading-fsize: 25px;
+  --project-title-fsize: 18px;
+  --project-description-fsize: 13px;
+  --project-btn-fsize: 11px;
   --contact-form-fsize: 20px;
   --copyright-txt-fsize: clamp(12px, 7vw, 26px);
 }
@@ -45,11 +45,15 @@ body{
 
   position: relative;
   width: min(var(--wrapper-max-width), 100% - var(--wrapper-padding));
-  height: fit-content;
   min-height: 100%;
   margin-inline: auto;
   padding-top: 1rem;
 }
+
+section{
+  padding-bottom: 120px;
+}
+
 
 .maneqquin-background{
   position: fixed;
