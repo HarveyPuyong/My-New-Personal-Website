@@ -1,5 +1,6 @@
 #page-three-section{
   display: flex;
+  display: none;
   flex-direction: column;
   gap: 60px;
   margin-top: 120px;
@@ -41,7 +42,7 @@
 
 .projects-list__project-card{
   backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.088);
+  border: 1px solid rgba(255, 255, 255, 0.123);
   border-radius: 8px;
   height: fit-content;
   padding: 13px 15px;
@@ -79,9 +80,11 @@
 @media(width >= 950px){
   #page-three-section{
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     gap: 60px;
-    margin-top: 110px;
+    margin-top: 120px;
+    padding: 0 15px;
   }
 
   .projects-container,
@@ -92,19 +95,20 @@
 
   .projects-container__heading,
   .tools-container__heading{
+    display: none;
     font-size: calc(var(--tools-and-project-heading-fsize) - 5px);
   }
 
   .tools-list.d-grid{
-    gap: 17px;
+    gap: 20px;
   }
 
   .tools-list__tool{
     background: none;
     backdrop-filter: blur(0px);
     border: none;
-    width: 56px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     max-width: 60px;
     padding: 0px;
   }

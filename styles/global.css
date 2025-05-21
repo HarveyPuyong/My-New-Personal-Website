@@ -11,8 +11,8 @@
   --project-title-fsize: 18px;
   --project-description-fsize: 13px;
   --project-btn-fsize: 11px;
-  --contact-form-fsize: 20px;
-  --copyright-txt-fsize: clamp(12px, 7vw, 26px);
+  --contact-form-fsize: 1rem;
+  --copyright-txt-fsize: clamp(11px, 2vw, 12px);
 }
 
 *{
@@ -59,7 +59,7 @@ section{
   position: fixed;
   pointer-events: auto;
   background: transparent;
-  height: 110%;
+  height: 108.8%;
   width: 101%;
   top: 0;
   will-change: transform;
