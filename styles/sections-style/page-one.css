@@ -1,17 +1,17 @@
 #page-one-section{
-  display: none;
+  display: block;
 }
 
 .name{
   color: rgb(59, 57, 57);
   text-align: center;
   font-size: var(--name-fsize);
-  margin-top: 7.6rem;
+  margin-top: 7.4rem;
   z-index: -10;
 }
 
-@media(width >= 800px){
+@media(width >= 50em /* 800px */){
   .name{
-    margin-top: 6.1rem;
+    margin-top: 5.7rem;
   }
 }

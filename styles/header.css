@@ -11,11 +11,12 @@ header{
   backdrop-filter: blur(10px);
   border-radius: 5px;
   width: fit-content;
+  padding-right: 4px;
 }
 
 .header__logo-icon{
-  width: clamp(24px, 2.3vw, 27px);
-  height: clamp(19px, 1.8vw, 20px);
+  width: clamp(1.5rem, 2.3vw, 1.6875rem); 
+  height: clamp(1.1875rem, 1.8vw, 1.25rem);
 }
 
 .header__logo-label{
@@ -26,12 +27,13 @@ header{
 
 .header__socmed-list{
   position: absolute;
-  top: 33px;
+  top: 31px;
   display: flex;
   width: fit-content;
   column-gap: 8px;
   backdrop-filter: blur(15px);
   border-radius: 8px;
+  padding-right: 3px;
 }
 
 .socmed-list__link{
@@ -54,10 +56,11 @@ header{
   height: fit-content;
   border-radius: 8px;
   padding: 4px 0;
-  cursor: pointer;
+  cursor: pointer; 
+  padding-right: 3px;
 }
 
-@media(width >= 500px){
+@media(width >= 31.25em /* 500px */){
   .header__socmed-list{
     position: relative;
     top: 0;
