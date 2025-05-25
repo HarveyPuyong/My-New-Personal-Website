@@ -10,6 +10,22 @@
   max-width: 500px;
 }
 
+.tools-list__tool,
+.projects-list__project-card{
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadein-from-top 1.9s forwards;
+  animation-delay: 1.2s;
+  will-change: transform;
+}
+
+@keyframes fadein-from-top{
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 .projects-container__heading,
 .tools-container__heading{
   color: var(--accent-color);
@@ -95,6 +111,13 @@
   .projects-container__heading,
   .tools-container__heading{
     display: none;
+  }
+
+  .tools-list__tool,
+  .projects-list__project-card{
+    transform: translateY(-37px);
+    animation: fadein-from-top 2.6s forwards;
+    animation-delay: 1.2s;
   }
 
   .tools-list.d-grid{

@@ -17,7 +17,12 @@
 
 .about-me{
   color: var(--font-color);
+  opacity: 0;
+  transform: translateX(-60px);
+  animation: slide-from-left 2s forwards;
+  animation-delay: 1.2s;
 }
+
 
 .skills-list{
   display: flex;
@@ -25,6 +30,30 @@
   row-gap: 5px;
   color: var(--font-color);
   list-style: none;
+  opacity: 0;
+  transform: translateX(60px);
+  animation: slide-from-right 2s forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes slide-from-left{
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-from-right{
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 .skills-list li{

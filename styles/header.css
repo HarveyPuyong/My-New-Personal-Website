@@ -2,6 +2,9 @@ header{
   position: relative;
   display: flex;
   justify-content: space-between;
+  opacity: 0;
+  animation: fade-in 2s forwards;
+  animation-delay: 0.5s;
 }
 
 .header__logo{
@@ -71,5 +74,11 @@ header{
 
   .socmed-list__link{
     padding-top: 3.2px;
+  }
+}
+
+@keyframes fade-in{
+  to{
+    opacity: 1;
   }
 }
