@@ -13,17 +13,8 @@
 .tools-list__tool,
 .projects-list__project-card{
   opacity: 0;
-  transform: translateY(-20px);
-  animation: fadein-from-top 1.9s forwards;
+  animation: fade-in 1.9s forwards; /* fade-in animation is in the global.css */
   animation-delay: 0.1s;
-  will-change: transform;
-}
-
-@keyframes fadein-from-top{
-  to{
-    opacity: 1;
-    transform: translateY(0px);
-  }
 }
 
 .projects-container__heading,
@@ -98,7 +89,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 60px;
-    margin-top: 120px;
+    margin-top: 140px;
     padding: 0 15px;
   }
 
@@ -111,11 +102,6 @@
   .projects-container__heading,
   .tools-container__heading{
     display: none;
-  }
-
-  .tools-list__tool,
-  .projects-list__project-card{
-    transform: translateY(-37px);
   }
 
   .tools-list.d-grid{
