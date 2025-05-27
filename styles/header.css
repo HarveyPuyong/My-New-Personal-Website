@@ -54,6 +54,7 @@ header{
   text-align: center;
   color: #000000;
   background-color: #5AB8C9;
+  border: none;
   font-weight: 700;
   width: clamp(90px, 21vw, 130px);
   height: fit-content;

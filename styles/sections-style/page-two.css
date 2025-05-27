@@ -20,7 +20,7 @@
   opacity: 0;
   transform: translateX(-60px);
   animation: slide-from-left 2s forwards;
-  animation-delay: 1.2s;
+  animation-delay: 0.1s;
 }
 
 
@@ -33,7 +33,7 @@
   opacity: 0;
   transform: translateX(60px);
   animation: slide-from-right 2s forwards;
-  animation-delay: 1.2s;
+  animation-delay: 0.1s;
 }
 
 @keyframes slide-from-left{

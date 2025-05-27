@@ -15,7 +15,7 @@
   opacity: 0;
   transform: translateY(-20px);
   animation: fadein-from-top 1.9s forwards;
-  animation-delay: 1.2s;
+  animation-delay: 0.1s;
   will-change: transform;
 }
 
@@ -61,7 +61,7 @@
   border-radius: 8px;
   height: fit-content;
   padding: 13px 15px;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
 }
 
 .projects-list__project-card-title{
@@ -116,8 +116,6 @@
   .tools-list__tool,
   .projects-list__project-card{
     transform: translateY(-37px);
-    animation: fadein-from-top 2.6s forwards;
-    animation-delay: 1.2s;
   }
 
   .tools-list.d-grid{

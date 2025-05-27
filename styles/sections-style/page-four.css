@@ -36,22 +36,22 @@
 
 .contact-form .input-name-container {
   transform: translateY(-20px);
-  animation-delay: 1.3s;
+  animation-delay: 0.1s;
 }
 
 .contact-form .input-email-container {
   transform: translateY(-18px);
-  animation-delay: 1.8s;
+  animation-delay: 0.3s;
 }
 
 .contact-form .input-message-container {
   transform: translateY(-16px);
-  animation-delay: 2.3s;
+  animation-delay: 0.5s;
 }
 
 .contact-form .submit-btn {
   transform: translateY(-14px);
-  animation-delay: 2.5s;
+  animation-delay: 0.7s;
 }
 
 
@@ -69,7 +69,8 @@
 }
 
 .contact-form textarea{
-  height: 100px;
+  height: 110px;
+  margin-bottom: 8px;
 }
 
 .contact-form #submit-btn{
@@ -95,7 +96,7 @@
   opacity: 0;
   transform: translateY(10px);
   animation: fadein-from-bottom 1.5s forwards;
-  animation-delay: 3.1s;
+  animation-delay: 1.2s;
 }
 
 @keyframes fadein-from-bottom{

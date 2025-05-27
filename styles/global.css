@@ -37,6 +37,7 @@ body{
   height: 100%;
   background-color: rgb(7, 7, 7);
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 .main-wrapper{
@@ -51,7 +52,7 @@ body{
 }
 
 section{
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 
 .maneqquin-background{
@@ -80,7 +81,7 @@ section{
   padding: 0 5px;
   opacity: 0;
   animation: fade-in 1.3s forwards;
-  animation-delay: 2.8s;
+  animation-delay: 2s;
 }
 
 .arrows-container__arrow{
@@ -88,6 +89,10 @@ section{
   gap: 7px;
   align-items: center;
   cursor: pointer;
+}
+
+.arrows-container__arrow.prev{
+  opacity: 0;
 }
 
 .arrows-container__arrow-label{
