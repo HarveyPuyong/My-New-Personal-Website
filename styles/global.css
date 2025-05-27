@@ -63,9 +63,9 @@ section{
   width: 101%;
   top: 0;
   will-change: transform;
-  z-index: 2;
   opacity: 0;
   animation: fade-in 2s forwards;
+  z-index: 2;
 }
 
 .top-layer-element{
