@@ -49,6 +49,7 @@ body{
   min-height: 100%;
   margin-inline: auto;
   padding-top: 1rem;
+  overflow-y: auto;
 }
 
 section{
@@ -58,6 +59,7 @@ section{
 .maneqquin-background{
   position: fixed;
   pointer-events: auto;
+  overflow-y: hidden;
   background: transparent;
   height: 108.8%;
   width: 101%;
