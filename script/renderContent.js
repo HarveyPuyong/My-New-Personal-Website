@@ -70,7 +70,7 @@ const renderPageThree = () => {
 }
 
 
-function renderContentMainFunction(){
+export default  function renderContentMainFunction(){
   renderHeader();
   renderName();
   renderPageTwo();
@@ -80,5 +80,3 @@ function renderContentMainFunction(){
   copyrightTxt.innerText = `©${new Date().getFullYear()} Meowish. All rights reserved`
 };
 
-
-export default renderContentMainFunction;

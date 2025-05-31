@@ -16,18 +16,18 @@ export default function changePageFunctionality(){
     if(displaySection.id === 'page-one-section'){
       displaySection.style.display = 'block';
       prevArrow.style.opacity = '0';
-      nextArrow.style.opacity = '0.8';
+      nextArrow.style.opacity = '1';
       maneqquinBackground.style.zIndex = '2';
       mainWrapper.style.zIndex = 'auto';
     }else if(displaySection.id === 'page-two-section' || displaySection.id === 'page-three-section'){
       displaySection.style.display = 'flex';
-      prevArrow.style.opacity = '0.8';
-      nextArrow.style.opacity = '0.8';
+      prevArrow.style.opacity = '1';
+      nextArrow.style.opacity = '1';
       maneqquinBackground.style.zIndex = '-10';
       mainWrapper.style.zIndex = '5';
     }else if(displaySection.id === 'page-four-section'){
       displaySection.style.display = 'block';
-      prevArrow.style.opacity = '0.8';
+      prevArrow.style.opacity = '1';
       nextArrow.style.opacity = '0';
     }
   }

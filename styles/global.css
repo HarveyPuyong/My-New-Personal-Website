@@ -91,7 +91,6 @@ section{
   gap: 7px;
   align-items: center;
   cursor: pointer;
-  opacity: 0.8;
 }
 
 .arrows-container__arrow.prev{
