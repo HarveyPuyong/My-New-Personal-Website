@@ -37,6 +37,7 @@
 }
 
 .tools-list__tool-img{
+  border-radius: 8px;
   height: 100%;
 }
 
@@ -72,7 +73,7 @@
   font-size: var(--project-btn-fsize);
   font-weight: 600;
   color: black;
-  background-color: var(--font-color);
+  background-color: #cbcbcb;
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -86,7 +87,6 @@
 @media(width >= 59.375em /* 950px */){
   #page-three-section{
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     gap: 60px;
     margin-top: 140px;
