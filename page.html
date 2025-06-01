@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harvey Personal Portfolio</title>
-    <!-- embed font family -->
+    <!-- Embed font family setup using Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Stylesheets or css links -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/global.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -15,29 +16,44 @@
     <link rel="stylesheet" href="styles/sections-style/pageTwo.css">
     <link rel="stylesheet" href="styles/sections-style/pageThree.css">
     <link rel="stylesheet" href="styles/sections-style/pageFour.css">
+    <!-- EmailJS library for sending emails from contact forms -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- Spline viewer module to embed 3D scenes created in Spline -->
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"></script>
   </head>
   <body>
+    <!-- Credits to the owner"@scottvisuals" of this 3D maneqquin, follow him on👉 https://app.spline.design/@scottvisuals -->
     <spline-viewer class="maneqquin-background" loading-anim-type="none" url="https://prod.spline.design/09aZZHPgw4Ms7x-w/scene.splinecode"></spline-viewer>
     <div class="main-wrapper">
-      <!-- header -->
-      <header></header>
+
+      <header>
+        <!-- Header content is dynamically rendered in script/renderContent.js -->
+      </header>
+
       <div class="sections-wrapper">
-        <!-- page-1 section -->
+        <!-- Page-1 (Name)-->
         <section id="page-one-section">
-          <h1 class="name">JOHN HARVEY</h1>
+          <h1 class="name"><!--Change the name from the data folder (personalData.js) --></h1>
         </section>
-        <!-- page-2 section -->
+
+        <!-- Page-2 (About and Skills)-->
         <section id="page-two-section">
-
+          <!-- Update page2 contents from the data folder (personalData.js) -->
+          <!-- Contents is render dynamically in script folder (renderContents.js) -->
         </section>
-        <!-- page-3 section -->
+
+        <!-- Page-3 (Tools and Projects)-->
         <section id="page-three-section">
-
+          <!-- Update page3 contents from the data folder (toolsData.js and projectsData.js) -->
+          <!-- Contents is render dynamically in script folder (renderContents.js) -->
         </section>
-        <!-- page-4 section -->
+
+        <!-- Page-4 (Contact Form)-->
          <section id="page-four-section">
+            <!-- To configure this contact form and make sure messages are sent to your Gmail,
+                 go to👉 emailjs.com and sign in with your email. Then get your
+                 publicKey, serviceId, and templateId, and paste them into personalData.js
+            -->
             <form id="contact-form" class="top-layer-element contact-form">
               <div class="input-name-container">
                 <label for="input-name">Name</label>
@@ -53,9 +69,7 @@
               </div>
               <button id="submit-btn" class="submit-btn">Submit</button>
             </form>
-            <p class="top-layer-element copy-right-txt">
-              <!--The copyright text is render in renderContent.js -->
-            </p>           
+            <p class="top-layer-element copy-right-txt"><!--The copyright text is render in renderContent.js --></p>           
          </section>
       </div>
       <!-- arrows -->
@@ -71,6 +85,7 @@
       </div>
     </div>
 
+    <!-- main javscript file link -->
     <script type="module" src="script/main.js"></script>
   </body>
 </html>

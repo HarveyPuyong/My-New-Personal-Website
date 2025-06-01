@@ -81,6 +81,7 @@
   border: none;
   border-radius: 3px;
   padding: 6px 10px;
+  cursor: pointer;
 }
 
 .copy-right-txt{

@@ -2,10 +2,7 @@
  * Email Sender Module
  * Handles email sending via EmailJS by initializing with a public key, serviceId and templateId
  * and sending form data on submission.
- *
- * Dependencies: EmailJS (https://www.emailjs.com/)
- * Usage: Call `emailSender()` to enable email-sending functionality.
- */
+*/
 
 import personalData from "../data/personalData.js";
 

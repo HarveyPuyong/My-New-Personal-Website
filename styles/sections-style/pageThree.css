@@ -34,6 +34,11 @@
 .tools-list__tool{
   border-radius: 8px;
   padding: 10% 15%;
+  transition: 0.3s;
+}
+
+.tools-list__tool:hover{
+  scale: 1.2;
 }
 
 .tools-list__tool-img{
