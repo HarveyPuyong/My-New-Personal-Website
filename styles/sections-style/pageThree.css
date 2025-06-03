@@ -1,6 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 #page-three-section{
   display: none; /*default display:flex*/
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 3.75rem;
   margin-top: 120px;
 }
@@ -13,8 +23,10 @@
 .tools-list__tool,
 .projects-list__project-card{
   opacity: 0;
-  animation: fade-in 1.9s forwards; /* fade-in animation is in the global.css */
-  animation-delay: 0.1s;
+  -webkit-animation: fade-in 1.9s forwards;
+          animation: fade-in 1.9s forwards; /* fade-in animation is in the global.css */
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .projects-container__heading,
@@ -26,7 +38,9 @@
 }
 
 .tools-list.d-grid{
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 0px 1fr 0px 1fr;
   grid-template-columns: repeat(3, 1fr);
   gap: 0px;
 }
@@ -34,6 +48,8 @@
 .tools-list__tool{
   border-radius: 8px;
   padding: 10% 15%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -47,15 +63,23 @@
 }
 
 .projects-list{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 16px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .projects-list__project-card{
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.123);
   border-radius: 8px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   padding: 13px 15px;
   padding-bottom: 17px;
@@ -83,16 +107,25 @@
   border-radius: 5px;
 }
 
-@media(width >= 21.875em /* 350px */){
+
+/* page width is greater than 350px */
+@media(min-width: 21.875em){
   .tools-list.d-grid{
     grid-template-columns: repeat(4, 1fr);
   }
 }
 
-@media(width >= 59.375em /* 950px */){
+
+/* page width is greater than 950px */
+@media(min-width: 59.375em){
   #page-three-section{
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 60px;
     margin-top: 140px;
     padding: 0 15px;

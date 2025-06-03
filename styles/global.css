@@ -18,7 +18,8 @@
 *{
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 img{
@@ -66,7 +67,8 @@ section{
   top: 0;
   will-change: transform;
   opacity: 0;
-  animation: fade-in 2s forwards;
+  -webkit-animation: fade-in 2s forwards;
+          animation: fade-in 2s forwards;
   z-index: 2;
 }
 
@@ -78,18 +80,28 @@ section{
   position: absolute;
   width: 100%;
   bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 5px;
   opacity: 0;
-  animation: fade-in 1.3s forwards;
-  animation-delay: 2s;
+  -webkit-animation: fade-in 1.3s forwards;
+          animation: fade-in 1.3s forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .arrows-container__arrow{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 7px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
 
@@ -112,6 +124,14 @@ section{
 
 .arrows-container__arrow-icon:first-child{
   rotate: 180deg;
+}
+
+
+@-webkit-keyframes fade-in{
+  to{
+    opacity: 1;
+    z-index: 5;
+  }
 }
 
 

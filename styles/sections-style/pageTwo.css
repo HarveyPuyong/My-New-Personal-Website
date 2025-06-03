@@ -1,6 +1,9 @@
 #page-two-section{
   display: none; /*default display:flex*/
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 1rem;
   margin-top: 120px;
 }
@@ -10,12 +13,15 @@
   font-size: var(--about-and-skills-fsize);
   border: 1px solid rgba(255, 255, 255, 0.123);
   border-radius: 5px;
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   padding: 18px;
   line-height: 1.4em;
   opacity: 0;
-  animation: fade-in 2s forwards;  /*fade-in animation is in the global.css */
-  animation-delay: 0.1s;
+  -webkit-animation: fade-in 2s forwards;
+          animation: fade-in 2s forwards;  /*fade-in animation is in the global.css */
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .about-me{
@@ -24,44 +30,64 @@
 
 
 .skills-list{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 5px;
   color: var(--font-color);
   list-style: none;
 }
 
 .skills-list li{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
-@media(width >= 56.25em /* 900px */){
+
+/*page width is greater than 900px */
+@media(min-width: 56.25em){
   #page-two-section{
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 170px;
   }
 
   .about-me,
   .skills-list{
     height: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     max-width: 33%;
     border: none;
     line-height: 1.5em;
     background: none;
-    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
     padding: 10px;
   }
 
   .skills-list li{
-    justify-content: flex-end; 
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; 
   }
 }
 
 
-@media(width >= 65.625em /* 1050px */){
+/*page width is greater than 1050px  */
+@media(min-width: 65.625em){
   #page-two-section{
     margin-top: 190px;
   }
